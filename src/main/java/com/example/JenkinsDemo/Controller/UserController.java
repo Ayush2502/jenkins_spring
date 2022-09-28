@@ -32,13 +32,7 @@ public class UserController {
        return "User Saved Successfully";
     }
 
-    @DeleteMapping("/delete/{id}")
-    public String delete(@PathVariable int id)
-    {
-        Users user = userRepository.getReferenceById(id);
-        userRepository.delete(user);
-        return "User deleted Successfully";
-    }
+   
     @PutMapping("/update/{id}")
     public String update(@PathVariable int id,@RequestBody Users user)
     {
