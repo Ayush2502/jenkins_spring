@@ -29,7 +29,7 @@ public class UserController {
     public String addusers(@RequestBody Users user)
     {
        userRepository.save(user) ;
-       return "User Saved Successfully";
+       return "User Saved Successfully in the db";
     }
 
    
