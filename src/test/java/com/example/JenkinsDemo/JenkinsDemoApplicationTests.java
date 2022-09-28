@@ -53,6 +53,7 @@ class JenkinsDemoApplicationTests {
 		Mockito.when(userRepository.save(users)).thenReturn(users);
 		assertEquals(users,userRepository.save(users));
 		Mockito.verify(userRepository).save(users);
+		System.out.println("Test runs smooth");
 	}
 
 	@Test
