@@ -64,7 +64,7 @@ public class UserController {
         else
             userRepository.save(user);
 
-        return "User Updated Successfully";
+        return "User Updated Successfully into the database";
     }
 
 }
