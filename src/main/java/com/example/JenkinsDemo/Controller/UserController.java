@@ -59,6 +59,7 @@ public class UserController {
             userRepository.save(user);
 
         System.out.println("Hello World 12345");
+        System.out.println("Update complete");
         return "User Updated Successfully into the database";
     }
    
